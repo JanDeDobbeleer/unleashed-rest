@@ -1,0 +1,23 @@
+### Get invoices for subscription
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/invoices
+Authorization: Bearer {{token}}
+
+### Customer invoices
+GET https://{{environment}}api.unleashed.be/{{brand}}/invoices
+Authorization: Bearer {{token}}
+
+### Get invoice pdf
+GET https://{{environment}}api.unleashed.be/{{brand}}/invoices/{{invoice_id}}/pdf
+Authorization: Bearer {{token}}
+
+
+### Get invoice Settings
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/invoicing-settings
+Authorization: Bearer {{token}}
+
+### Update invoice settings
+PUT https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/invoicing-settings
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+< .\body\invoice_settings.json

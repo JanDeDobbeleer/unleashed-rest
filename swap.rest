@@ -1,0 +1,27 @@
+### Get SWAP status
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/sim/swap
+Authorization: Bearer {{token}}
+
+### Request SWAP
+POST https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/sim/swap
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "block_sim": "false",
+    "password": "",
+    "reason": "other",
+    "shipping_address": {
+        "address": {
+            "box": "1",
+            "city": "Hasselt",
+            "country": "BE",
+            "number": "309",
+            "postcode": "3500",
+            "street": "Kempische Steenweg"
+        },
+        "company_name": "Unleashed",
+        "first_name": "Hans",
+        "last_name": "Otten"
+    }
+}

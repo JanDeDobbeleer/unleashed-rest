@@ -1,0 +1,35 @@
+### Topup 10
+@product_id = 25001-1-1
+
+### List orders
+GET https://{{environment}}api.unleashed.be/{{brand}}/orders
+Authorization: Bearer {{token}}
+
+### List orders (NEW)
+GET https://{{environment}}api.unleashed.be/{{brand}}/orders-new
+Authorization: Bearer {{token}}
+
+### Get order
+GET https://{{environment}}api.unleashed.be/{{brand}}/orders/{{order_id}}
+Authorization: Bearer {{token}}
+
+### Do topup
+POST https://{{environment}}api.unleashed.be/{{brand}}/orders
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "product_id": "{{product_id}}",
+    "subscription_id": "{{subscription_id}}"
+}
+
+### Pay
+POST https://{{environment}}api.unleashed.be/{{brand}}/pay
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "order_id": "{{order_id}}",
+    "payment_method": "Bitcoin",
+    "redirect_url": "https://www.google.be"
+}

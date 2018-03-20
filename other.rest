@@ -1,0 +1,3 @@
+### List orders
+GET https://{{environment}}api.unleashed.be/{{brand}}/operators
+Authorization: Bearer {{token}}

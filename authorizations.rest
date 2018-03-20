@@ -1,0 +1,29 @@
+### List authorizations
+GET https://{{environment}}api.unleashed.be/{{brand}}/authorizations
+Authorization: Bearer {{token}}
+
+### Get one authorizations
+GET https://{{environment}}api.unleashed.be/{{brand}}/authorizations/{{authorization_id}}
+Authorization: Bearer {{token}}
+
+### Update authorizations
+PUT https://{{environment}}api.unleashed.be/{{brand}}/authorizations/{{authorization_id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "state": "removed"
+}
+
+### Request authorization
+POST https://{{environment}}api.unleashed.be/{{brand}}/authorizations
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "authorized_customer": {
+        "email": "katrien.crispeyn@gmail.com"
+    },
+    "password": "7ddb85b1e7db6221f908e1351fe3821cceca514ec6d446ccdb1aaadf62cea13a",
+    "subscription_id": "{{subscription_id}}"
+}

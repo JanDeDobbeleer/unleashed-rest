@@ -1,0 +1,68 @@
+### List subscriptions
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions
+Authorization: Bearer {{token}}
+
+### Get Subscription Balance
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/balance
+Authorization: Bearer {{token}}
+
+### Create Subscription
+POST https://{{environment}}api.unleashed.be/{{brand}}/subscriptions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "child_product_ids": [
+        "product_id"
+    ],
+    "product_id": "product_id"
+}
+
+### Get Subscription
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}
+Authorization: Bearer {{token}}
+
+### Get auto topup settings
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/auto-topup-settings
+Authorization: Bearer {{token}}
+
+### Update auto topup settings
+PUT https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/auto-topup-settings
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+< ./body/auto_topup.json
+
+### Get voicemail settings
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/voicemail-settings
+Authorization: Bearer {{token}}
+
+### Update voicemail settings
+PUT https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/voicemail-settings
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "language": "en"
+}
+
+### Delete subscription
+DELETE https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}
+Authorization: Bearer {{token}}
+
+### Get topups
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/topups
+Authorization: Bearer {{token}}
+
+### Get topups new
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/topups-new
+Authorization: Bearer {{token}}
+
+### List topups using orders
+GET https://{{environment}}api.unleashed.be/{{brand}}/orders
+    ?subscription_id={{subscription_id}}
+Authorization: Bearer {{token}}
+
+### Get usage
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/usage
+Authorization: Bearer {{token}}

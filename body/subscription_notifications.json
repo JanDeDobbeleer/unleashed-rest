@@ -1,0 +1,170 @@
+[
+  {
+    "name": "POSTPAID_DATA_THRESHOLD",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "POSTPAID_SON_MINUTES_EXHAUSTED",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "ALERT_SMS",
+    "channels": {
+      "mail": false,
+      "sms": false
+    }
+  },
+  {
+    "name": "ALERT_EURO5",
+    "channels": {
+      "mail": false,
+      "sms": false
+    }
+  },
+  {
+    "name": "ALERT_EURO1",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "POSTPAID_OUT_OF_BUNDLE_USAGE",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "POSTPAID_DATA_EXHAUSTED",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "auto-topup-received",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "POSTPAID_SMS_ATAN_EXHAUSTED",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "POSTPAID_MAXIMUM_ALLOWANCE_REACHED",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "auto-postpaid-payment-received",
+    "channels": {
+      "mail": true,
+      "sms": false
+    }
+  },
+  {
+    "name": "ROAM_USED80",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "auto-topup-failed",
+    "channels": {
+      "mail": false,
+      "sms": false
+    }
+  },
+  {
+    "name": "ROAM_EXPIRED",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "ROAM_USED100",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "POSTPAID_SMS_SON_EXHAUSTED",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "ALERT_DATA",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "sim-swap",
+    "channels": {
+      "mail": false,
+      "sms": false
+    }
+  },
+  {
+    "name": "POSTPAID_VOICE_MINUTES_EXHAUSTED",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "ALERT_DAYS2",
+    "channels": {
+      "mail": false,
+      "sms": false
+    }
+  },
+  {
+    "name": "ROAM_EXPIRESOON",
+    "channels": {
+      "mail": false,
+      "sms": true
+    }
+  },
+  {
+    "name": "dunning-postpaid-payment-received",
+    "channels": {
+      "mail": true,
+      "sms": false
+    }
+  },
+  {
+    "name": "auto-postpaid-payment-failed",
+    "channels": {
+      "mail": true,
+      "sms": true
+    }
+  },
+  {
+    "name": "ROAM_PURCHASE",
+    "channels": {
+      "mail": false,
+      "sms": false
+    }
+  }
+]

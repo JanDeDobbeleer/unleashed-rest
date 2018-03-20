@@ -1,0 +1,56 @@
+[
+  {
+    "name": "viking-points-vikinglab-received",
+    "channels": {
+      "mail": true
+    }
+  },
+  {
+    "name": "mailings",
+    "channels": {
+      "mail": false
+    }
+  },
+  {
+    "name": "direct-debit-notification",
+    "channels": {
+      "mail": true
+    }
+  },
+  {
+    "name": "viking-deals-marketing",
+    "channels": {
+      "mail": true
+    }
+  },
+  {
+    "name": "easy-payment-notification",
+    "channels": {
+      "mail": true
+    }
+  },
+  {
+    "name": "viking-points-referral",
+    "channels": {
+      "mail": true
+    }
+  },
+  {
+    "name": "viking-points-received",
+    "channels": {
+      "mail": true
+    }
+  },
+  {
+    "name": "direct_marketing",
+    "channels": {
+      "mail": false
+    }
+  },
+  {
+    "name": "authorization",
+    "channels": {
+      "mail": true
+    }
+  }
+]

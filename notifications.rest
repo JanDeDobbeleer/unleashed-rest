@@ -1,0 +1,21 @@
+### Get Customer notification settings
+GET https://{{environment}}api.unleashed.be/{{brand}}/notification-settings
+Authorization: Bearer {{token}}
+
+### Update Customer notification settings
+PUT https://{{environment}}api.unleashed.be/{{brand}}/notification-settings
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+< ./body/customer_notifications.json
+
+### Get notification settings
+GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/notification-settings
+Authorization: Bearer {{token}}
+
+### Update notifications settings
+PUT https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/notification-settings
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+< ./body/subscription_notifications.json

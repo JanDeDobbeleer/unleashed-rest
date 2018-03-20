@@ -1,0 +1,19 @@
+### Request update
+POST https://{{environment}}api.unleashed.be/{{brand}}/email/update
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "email": "{{email}}",
+    "password": ""
+}
+
+### Perform update
+POST https://{{environment}}api.unleashed.be/{{brand}}/email/update/perform
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "code": "{{code}}",
+    "email": "{{email}}"
+}

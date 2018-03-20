@@ -1,0 +1,18 @@
+### Activate SIM
+POST https://{{environment}}api.unleashed.be/{{brand}}/sims/activate
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "iccid": "string"
+}
+
+### Update SIM
+PUT https://{{environment}}api.unleashed.be/{{brand}}/sims/{{msisdn}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alias": "Deep thought",
+    "state": "string"
+}

@@ -1,0 +1,19 @@
+### Get points
+GET https://{{environment}}api.unleashed.be/{{brand}}/loyalty-points/balance
+Authorization: Bearer {{token}}
+
+### List transactions
+GET https://{{environment}}api.unleashed.be/{{brand}}/loyalty-points/transactions
+Authorization: Bearer {{token}}
+
+### Transfer points
+POST https://{{environment}}api.unleashed.be/{{brand}}/loyalty-points/transfer
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "amount": "1",
+    "receiving_customer": {
+        "email": "jan.de.dobbeleer+mv@gmail.com"
+    }
+}

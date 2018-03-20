@@ -1,0 +1,7 @@
+### Get Product list
+GET https://{{environment}}api.unleashed.be/{{brand}}/products
+Authorization: Bearer {{token}}
+
+### Get product
+GET https://{{environment}}api.unleashed.be/{{brand}}/products/{{product_id}}
+Authorization: Bearer {{token}}

@@ -1,0 +1,15 @@
+{
+    "billing_preference": "digital",
+    "invoicing_address": {
+      "first_name": "NOT_IMPLEMENTED",
+      "last_name": "NOT_IMPLEMENTED",
+      "address": {
+        "street": "Kempische Steenweg",
+        "number": "309",
+        "box": "",
+        "postcode": "3500",
+        "city": "Hasselt",
+        "country": "BE"
+      }
+    }
+  }

@@ -1,0 +1,26 @@
+{
+    "mandate_id": "298275",
+    "product_id": "26001-1-1",
+    "triggers": [
+      {
+        "description": "",
+        "state": "on",
+        "threshold": 0,
+        "trigger": "bundle_expiry"
+      },
+      {
+        "description": "",
+        "state": "on",
+        "threshold": 10,
+        "trigger": "credit_low"
+      },
+      {
+        "description": "",
+        "state": "off",
+        "threshold": 100,
+        "trigger": "data_low"
+      }
+    ],
+    "allow_sms_topup": true,
+    "use_loyalty_points_first": true
+  }

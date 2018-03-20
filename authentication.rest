@@ -1,0 +1,12 @@
+### Login
+POST https://{{environment}}api.unleashed.be/{{brand}}/oauth2/token/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+client_id={{client_id}}&client_secret={{client_secret}}&grant_type=password&username={{username}}&password={{password}}
+
+### Revoke token
+
+POST https://{{environment}}api.unleashed.be/{{brand}}/oauth2/revoke_token/ HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+client_id={{client_id}}&client_secret={{client_secret}}&token={{token}}

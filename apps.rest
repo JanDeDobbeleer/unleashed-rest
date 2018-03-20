@@ -1,0 +1,3 @@
+## App versions
+GET https://{{environment}}api.unleashed.be/{{brand}}/apps/versions
+Authorization: Bearer {{token}}

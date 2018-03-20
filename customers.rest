@@ -1,0 +1,26 @@
+### Get Customer information
+GET https://{{environment}}api.unleashed.be/{{brand}}/customers/me
+Authorization: Bearer {{token}}
+
+### Update Customers information
+PUT https://{{environment}}api.unleashed.be/{{brand}}/customers/me
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+< ./body/customer.json
+
+### Request verification
+POST https://{{environment}}api.unleashed.be/{{brand}}/customers/verify
+Authorization: Bearer {{token}}
+
+### Verify customer
+POST https://{{environment}}api.unleashed.be/{{brand}}/customers/verify/perform
+Authorization: Bearer {{token}}
+
+### Migrate customer
+PUT https://{{environment}}api.unleashed.be/{{brand}}/migrate
+Authorization: Bearer {{token}}
+
+### Create Customer
+POST https://{{environment}}api.unleashed.be/{{brand}}/customers
+Authorization: Bearer {{token}}

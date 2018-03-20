@@ -1,0 +1,48 @@
+### Request SEPA mandate creation
+POST https://{{environment}}api.unleashed.be/{{brand}}/mandates/request
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "bic": "KREDBEBB",
+    "iban": "BE68539007547034",
+    "mandate_name": "My mandate",
+    "method": "sepa",
+    "redirect_url": "http://google.be"
+}
+
+### Request Credit Card mandate creation
+POST https://{{environment}}api.unleashed.be/{{brand}}/mandates/request
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "method": "creditcard",
+    "redirect_url": "http://google.be"
+}
+
+### Link mandate
+POST https://{{environment}}api.unleashed.be/{{brand}}/mandates/{{mandate_id}}/link
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "subscription_id": "{{subscription_id}}"
+}
+
+### Unlink mandate
+DELETE https://{{environment}}api.unleashed.be/{{brand}}/mandates/{{mandate_id}}/link
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "subscription_id": "{{subscription_id}}"
+}
+
+### List mandates
+GET https://{{environment}}api.unleashed.be/{{brand}}/mandates
+Authorization: Bearer {{token}}
+
+### Remove mandate
+DELETE https://{{environment}}api.unleashed.be/{{brand}}/mandates/{{mandate_id}}
+Authorization: Bearer {{token}}
