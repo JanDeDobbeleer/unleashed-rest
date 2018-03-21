@@ -6,18 +6,6 @@ Authorization: Bearer {{token}}
 GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}/balance
 Authorization: Bearer {{token}}
 
-### Create Subscription
-POST https://{{environment}}api.unleashed.be/{{brand}}/subscriptions
-Authorization: Bearer {{token}}
-Content-Type: application/json
-
-{
-    "child_product_ids": [
-        "product_id"
-    ],
-    "product_id": "product_id"
-}
-
 ### Get Subscription
 GET https://{{environment}}api.unleashed.be/{{brand}}/subscriptions/{{subscription_id}}
 Authorization: Bearer {{token}}

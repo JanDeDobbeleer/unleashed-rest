@@ -1,0 +1,42 @@
+### Create PrePaid Subscription
+POST https://{{environment}}api.unleashed.be/{{brand}}/subscriptions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "child_product_ids": [
+        "25000-1-1"
+    ],
+    "product_id": "2350982-1-1"
+}
+
+### Create PostPaid Subscription
+POST https://{{environment}}api.unleashed.be/{{brand}}/subscriptions
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "product_id": "211-1-1",
+    "billing_address": {
+        "address": {
+            "city": "Hasselt",
+            "country": "BE",
+            "number": "309",
+            "postcode": "3500",
+            "street": "Kempische Steenweg"
+        },
+        "first_name": "Hans",
+        "last_name": "Otten"
+    },
+    "shipping_address": {
+        "address": {
+            "city": "Hasselt",
+            "country": "BE",
+            "number": "309",
+            "postcode": "3500",
+            "street": "Kempische Steenweg"
+        },
+        "first_name": "Hans",
+        "last_name": "Otten"
+    }
+}
